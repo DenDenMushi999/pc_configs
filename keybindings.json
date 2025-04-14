@@ -1,5 +1,17 @@
 // Place your key bindings in this file to override the defaults
 [
+  // SELECTION
+  // MY CUSTOM SHORTCUTS
+  {
+    "key": "ctrl+d",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "editor.action.selectHighlights",
+    "when": "editorTextFocus"
+  },
     // NAVIGATION
     {
         "key": "ctrl+shift+a",
