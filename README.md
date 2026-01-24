@@ -6,7 +6,7 @@ This is files of my linux environment such as .vimrc, .bashrc in order to have s
 ## Symlinks
 For solid config files, if you don't want to copy files for each new change, you can make symlinks for this files
 ### Linux
-- Do linking of files with **$ln -s** in order to not copy this files every time it updates
+- Do linking of files with `$ln -s` in order to not copy this files every time it updates
 ### Windows
 - open cmd in Administrator mode
 ```
