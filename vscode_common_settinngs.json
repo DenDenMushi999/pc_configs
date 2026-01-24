@@ -2,17 +2,22 @@
     "launch": {},
     "[json]": {},
     "files.trimTrailingWhitespace": true,
-    "terminal.integrated.splitCwd": "inherited",
-    "security.promptForLocalFileProtocolHandling": false,
-    "security.workspace.trust.untrustedFiles": "open",
     //
+    "terminal.integrated.splitCwd": "inherited",
     "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "terminal.integrated.allowChords": false,
+    "terminal.integrated.scrollback": 99999,
+    //
+    "security.promptForLocalFileProtocolHandling": false,
+    "security.workspace.trust.untrustedFiles": "open",
     //
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
+    //
     "editor.renderWhitespace": "all",
+    "editor.hover.enabled": "on",
+    "editor.multiCursorModifier": "ctrlCmd",
     // In order to use usual keyboard shortcut of your shell, but not VScode's one
     "editor.unicodeHighlight.allowedLocales": {
         "diffEditor.ignoreTrimWhitespace": false,
