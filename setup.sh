@@ -2,24 +2,7 @@
 echo "Hello, before working on eurobot don't forget to switch to eurobot22 virtaul environment"
 echo "And I wish you good coding ;-) "
 
-
-# source $HOME/.local/bin/virtualenvwrapper.sh
-#  set up virtual env path
 export VENV_PATH=$HOME/.virtualenvs
-# path to virtualenvwrapper variable where it will create new venvs
-# export WORKON_HOME=$HOME/.virtualenvs
-
-# eurobot venv direcotory
-export EUROBOT_VENV=$HOME/.virtualenvs/eurobot22
-export CAM_REP22=$HOME/projects/eurobot22_cv
-export CAM_22_ROS=$HOME/catkin_ws/src/eurobot22_cv
-export TMP_EUR22=$CAM_REP22/temp_files
-
-export PYTHONPATH=$PYTHONPATH:$CAM_22_ROS
-# export YOLOV5=$CAM_22_ROS/yolov5
-# export PYTHONPATH=$PYTHONPATH:$YOLOV5
-export PERC_DIR=$HOME/projects/Perception_repo
-export GITHUB_TOKEN="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"
 
 # CUDA_VERSION=11.3
 # export PATH=/usr/local/cuda-$CUDA_VERSION/bin${PATH:+:${PATH}}
