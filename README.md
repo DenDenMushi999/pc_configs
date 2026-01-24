@@ -31,3 +31,8 @@ mklink <target_path> <source_path>
 # Example
 # mklink %USERPROFILE%\.vimrc <repo_path>\.vimrc
 ```
+
+## Terminal settings
+### Powershell
+- I recommend to use PowerShell7, it have more capabilities
+- Copy Profile.ps1 into $PSHOME\Profile.ps1
