@@ -1,18 +1,17 @@
 # linux_configs
-This is files of my linux environment such as .vimrc, .bashrc in order to have same config in different machines
+This is files of my linux environment such as `.vimrc`, `.bashrc` in order to have same config in different machines
 
-# Configure
 
-## Symlinks
+# Symlinks
 For files that you may fully copy, if you don't want to copy files for each new change, you can make symlinks for this files
-### Linux
+## Linux
 - Do linking of files with `$ln -s`
 ```
 ln -s <FULL_SRC_PATH> <FULL_DEST_PATH>
 # For example
 ln -s <FULL_REPO_PATH>/.vimrc /home/<username>/.vimrc
 ```
-### Windows
+## Windows
 - open cmd in Administrator mode
 ```
 mklink <target_path> <source_path>
@@ -20,8 +19,7 @@ mklink <target_path> <source_path>
 # mklink %USERPROFILE%\.vimrc <repo_path>\.vimrc
 ```
 
-
-## Vscode settings
+# Vscode settings
 
 - There are several settings files. VScode doesn't support 'importing' several settings, so you need to combine desired settings to your final settings file (User/Workspace settings.json)
 
@@ -32,7 +30,7 @@ mklink <target_path> <source_path>
 while IFS= read -r line; do code --install-extension  "$line"; done < vscode_extensions.txt
 ```
 
-## Vim settings
+# Vim settings
 - in vim settings I use neovim, so install it, and source .vimrc settings if you want to import vim settings to neovim
 - In order to make configuration universal to Vim and NeoVim users, as base configuration I use .vimrc.
   - Copy .vimrc file to home directory. For linux `~/.vimrc` , for Windows `~/AppData/_vimrc`
@@ -41,7 +39,7 @@ while IFS= read -r line; do code --install-extension  "$line"; done < vscode_ext
 - [vim-plug](https://github.com/junegunn/vim-plug) was used as a plugin manager neovim. Follow instructions in their repo and install it
 
 
-## Terminal settings
-### Powershell
+# Terminal settings
+## Powershell
 - I recommend to use PowerShell7, it have more capabilities
 - Copy Profile.ps1 into $PSHOME\Profile.ps1
