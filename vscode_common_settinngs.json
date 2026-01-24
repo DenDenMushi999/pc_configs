@@ -3,9 +3,6 @@
     "[json]": {},
     "files.trimTrailingWhitespace": true,
     "terminal.integrated.splitCwd": "inherited",
-    "[python]": {
-        "editor.formatOnType": true
-    },
     "security.promptForLocalFileProtocolHandling": false,
     "security.workspace.trust.untrustedFiles": "open",
     //
@@ -21,7 +18,24 @@
         "diffEditor.ignoreTrimWhitespace": false,
         "ru": true
     },
-    // Jupyter notebook
+    //// Python related settings
+    ///
+    "[python]": {
+        // Black formatter almost don't use format-on-type, so you mostly won't feel it
+        "editor.formatOnType": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        // I don't use import auto-sort on save
+        // because it's practically inconvenient
+        // 1. Some team member don't use it
+        // 2. etc.
+        // Instead of, use when you need by pressing Shift + Alt + O
+        // "editor.codeActionsOnSave": {
+        //     "source.organizeImports": "explicit"
+        // },
+    },
+    "isort.check": true,
+    ///// Jupyter notebook
     //
     "notebook.lineNumbers": "on",
     // To ALWAYS open refference in new file
