@@ -43,3 +43,17 @@ while IFS= read -r line; do code --install-extension  "$line"; done < vscode_ext
 ## Powershell
 - I recommend to use PowerShell7, it have more capabilities
 - Copy Profile.ps1 into $PSHOME\Profile.ps1
+
+# Conda settings
+- If you want to change default virtualenvs path, change conda config:
+```
+conda config --add envs_dirs <you_venv_dir>
+# Or just manually create .condarc file in your directory.
+# Example of file
+ channels:
+  - defaults
+
+envs_dirs:
+  - D:\.virtualenvs
+
+``` 
