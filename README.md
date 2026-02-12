@@ -48,12 +48,12 @@ while IFS= read -r line; do code --install-extension  "$line"; done < vscode_ext
 - If you want to change default virtualenvs path, change conda config:
 ```
 conda config --add envs_dirs <you_venv_dir>
-# Or just manually create .condarc file in your directory.
-# Example of file
- channels:
+```
+- Or just manually create .condarc file in your directory. Example of file:
+```
+channels:
   - defaults
 
 envs_dirs:
   - D:\.virtualenvs
-
 ``` 
