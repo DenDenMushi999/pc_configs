@@ -33,7 +33,7 @@ while IFS= read -r line; do code --install-extension  "$line"; done < vscode_ext
 # Vim settings
 - in vim settings I use neovim, so install it, and source .vimrc settings if you want to import vim settings to neovim
 - In order to make configuration universal to Vim and NeoVim users, as base configuration I use .vimrc.
-  - Copy .vimrc file to home directory. For linux `~/.vimrc` , for Windows `~/AppData/_vimrc`
+  - Copy .vimrc file to home directory. For linux `~/.vimrc` , for Windows `~/_vimrc`
   - After installing Neovim, copy init.vim to `~/.config/nvim/init.vim` (for Linux) or `~/AppData/Local/nvim/init.vim` (for Windows)
 
 - [vim-plug](https://github.com/junegunn/vim-plug) was used as a plugin manager neovim. Follow instructions in their repo and install it
